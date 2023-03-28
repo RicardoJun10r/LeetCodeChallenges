@@ -1,4 +1,4 @@
-public class Solution
+public class ClimbingStairsSolution
 {
 	public static void main(String[]args)
 	{
@@ -20,6 +20,6 @@ public class Solution
 			return 1;
 		
 		}
-		
+		return resultado;
 	}
 }
