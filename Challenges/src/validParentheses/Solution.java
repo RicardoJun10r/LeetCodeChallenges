@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 public class Solution{
 	
 	public static void main(String[]args)
@@ -10,62 +12,50 @@ public class Solution{
 	}
 	public static boolean isValid(String s){
 
-		boolean resposta = true;
-		
-		int size = s.length();
+		// if(s.length()%2 != 0) return false;
 
-		int contador = 0;
+		Stack<Character> pilha = new Stack<>();
 
-		if(size%2 != 0)
-		{
-			return false;
-		}
-
-		int j;
-		while(contador < size)
-		{
-			for(int i = 0; i < s.length(); i++)
-			{
-				j =(i+1)%size;
-				if(s.charAt(i) == '(')
-				{
-					if(s.charAt(j) != ')')
-					{
-						resposta = false;
-						break;
-					}
-					else
-					{
-						break;
-					}
-				}
-				if(s.charAt(i) == '[')
-				{
-					if(s.charAt(j) != ']')
-					{
-						resposta = false;
-						break;
-					}
-					else
-					{
-						break;
-					}
-				}
-				if(s.charAt(i) == '{')
-				{
-					if(s.charAt(j) != '}')
-					{
-						resposta = false;
-						break;
-					}
-					else
-					{
-						break;
-					}
+		for(int i = 0; i < s.length(); i++){
+			if(s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{'){
+				pilha.push(s.charAt(i));
+			}
+			if(s.charAt(i) == ')'){
+				if(pilha.peek() == '('){
+					pilha.pop();
 				}
 			}
-			contador++;
+			if(s.charAt(i) == ']'){
+				if(pilha.peek() == '['){
+					pilha.pop();
+				}
+			}
+			if(s.charAt(i) == '}'){
+				if(pilha.peek() == '{'){
+					pilha.pop();
+				}
+			}
 		}
-		return resposta;
+
+		// for(int i = 0; i < s.length(); i++){
+		// 	if(s.charAt(i) == ')'){
+		// 		if(pilha.peek() == '('){
+		// 			pilha.pop();
+		// 		}
+		// 	}
+		// 	if(s.charAt(i) == ']'){
+		// 		if(pilha.peek() == '['){
+		// 			pilha.pop();
+		// 		}
+		// 	}
+		// 	if(s.charAt(i) == '}'){
+		// 		if(pilha.peek() == '{'){
+		// 			pilha.pop();
+		// 		}
+		// 	}
+		// }
+
+		if(pilha.size() == 0) return true;
+		else return false;
 	}
 }
