@@ -1,4 +1,4 @@
-public class Solution{
+public class MaxProfitSolution{
 	
 	public static void main(String[]args){
 		int[]vetor = { 1, 2 };

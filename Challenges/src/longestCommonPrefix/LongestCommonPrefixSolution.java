@@ -1,5 +1,5 @@
 
-public class Solution
+public class LongestCommonPrefixSolution
 {
 	public static void main(String[]args)
 	{

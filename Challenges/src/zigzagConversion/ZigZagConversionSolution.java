@@ -1,4 +1,4 @@
-public class Main
+public class ZigZagConversionSolution
 {
 	public static void main(String[]args)
 	{

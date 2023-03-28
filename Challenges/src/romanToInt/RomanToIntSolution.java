@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution{
+public class RomanToIntSolution{
 	
 	public static void main(String[]args)
 	{

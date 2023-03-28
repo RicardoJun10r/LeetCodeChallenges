@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution
+public class RemoveDuplicatesFromSortedArraySolution
 {
 	public static void main(String[]args)
 	{

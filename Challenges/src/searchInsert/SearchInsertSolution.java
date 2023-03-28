@@ -1,4 +1,4 @@
-public class Solution{
+public class SearchInsertSolution{
 	
 	public static void main(String[]args)
 	{

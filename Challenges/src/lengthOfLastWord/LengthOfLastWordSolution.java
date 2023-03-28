@@ -1,4 +1,4 @@
-public class Solution
+public class LengthOfLastWordSolution
 {
 	public static void main(String[]args)
 	{
