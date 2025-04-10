@@ -1,3 +1,4 @@
+package ClimbingStairs;
 public class ClimbingStairsSolution
 {
 	public static void main(String[]args)
