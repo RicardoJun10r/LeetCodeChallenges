@@ -1,16 +1,10 @@
-
+package longestCommonPrefix;
 public class LongestCommonPrefixSolution
 {
-	public static void main(String[]args)
-	{
-		String[] strs = {"ab","a"};
-		System.out.println(longestCommonPrefix(strs));	
-	}
 
 	public static String longestCommonPrefix(String[] palavras){
 		boolean flag = true;
 		int cont = 0;
-		int size = shortestLength(palavras);
 		while(flag){
 			char vez = palavras[0].charAt(cont);
 			for(int i = 0; i < palavras.length; i++){

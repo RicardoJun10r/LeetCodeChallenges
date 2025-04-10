@@ -1,12 +1,7 @@
+package removeElement;
+
 public class RemoveElementSolution{
 	
-	public static void main(String[] args)
-	{
-		int[]nums = {3, 2, 2, 3};
-		
-		System.out.println("Resposta: " + removeElement(nums, 3));
-	}
-
 	public static int removeElement(int[] nums, int val)
 	{
 		int soma = 0;

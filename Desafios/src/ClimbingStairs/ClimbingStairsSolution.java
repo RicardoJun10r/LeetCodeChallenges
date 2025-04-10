@@ -1,10 +1,6 @@
 package ClimbingStairs;
 public class ClimbingStairsSolution
 {
-	public static void main(String[]args)
-	{
-		System.out.println(climbStairs(3));
-	}
 
 	public static int climbStairs(int n){
 

@@ -2,13 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FizzBuzzSolution {
-    public static void main(String[] args) {
-        List<String> lista = new ArrayList<>();
-        lista = fizzBuzz(3);
-        for(int i = 0; i < lista.size(); i++){
-            System.out.println(lista.get(i).toString());
-        }
-    }
 
     public static List<String> fizzBuzz(int n) {
         List<String> resposta = new ArrayList<>();

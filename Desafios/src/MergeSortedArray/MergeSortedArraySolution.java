@@ -1,3 +1,4 @@
+package MergeSortedArray;
 import java.util.Arrays;
 
 public class MergeSortedArraySolution {

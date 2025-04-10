@@ -7,9 +7,9 @@ public class ZigZagConversionSolution
 
 	public static void convert(String s, int numRows) {
 
-		String TMP = "";
 		int cont = 0;
-		int numColumns = s.length()/2;
+		int numColumns = s.length()/numRows;
+		System.out.println("Linhas: " + numRows + " Colunas: " + numColumns);
 		char[][] matriz = new char[numRows][numColumns];
 		for(int i = 0; i < numRows; i++)
 		{
@@ -34,13 +34,19 @@ public class ZigZagConversionSolution
 			cont = 1;
 		}
 		
-		for(int i = 0; i < numRows; i++)
+		print(matriz);
+    }
+
+	static void print(char[][] matriz)
+	{
+		for(int i = 0; i < matriz.length; i++)
 		{
-			for(int j = 0; j < numColumns; j++)
+			for(int j = 0; j < matriz[i].length; j++)
 			{
 				System.out.print(matriz[i][j] + " ");
 			}
 			System.out.println();
 		}
-    }
+		System.out.println();
+	}
 }

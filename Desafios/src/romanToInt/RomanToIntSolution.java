@@ -1,13 +1,8 @@
+package romanToInt;
 import java.util.HashMap;
 import java.util.Map;
 
 public class RomanToIntSolution{
-	
-	public static void main(String[]args)
-	{
-		System.out.println(romanToInt("MCMXCIV"));
-	}
-
 	public static int romanToInt(String s)
 	{
 		Map<String, Integer> hashMap = new HashMap<>();

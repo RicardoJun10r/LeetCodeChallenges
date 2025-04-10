@@ -1,10 +1,7 @@
+package maxProfit;
+
 public class MaxProfitSolution{
 	
-	public static void main(String[]args){
-		int[]vetor = { 1, 2 };
-		System.out.println(maxProfit(vetor));
-	}
-
 	public static int maxProfit(int[] prices) {
         int menor, menorPosicao, maior;
 

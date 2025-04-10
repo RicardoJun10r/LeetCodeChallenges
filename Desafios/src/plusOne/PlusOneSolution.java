@@ -1,12 +1,7 @@
+package plusOne;
+
 public class PlusOneSolution
 {
-	public static void main(String[]args)
-	{
-		int[]digits = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-		plusOne(digits);
-		System.out.println();
-	}
-
 	public static int[] plusOne(int[] digits)
 	{
         

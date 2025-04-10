@@ -1,3 +1,5 @@
+package ReverseString;
+
 class ReverseStringSolution {
     public void reverseString(char[] s) {
         char[]vetReves = new char[s.length];
