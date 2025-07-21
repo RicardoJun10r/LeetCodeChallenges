@@ -1,3 +1,4 @@
+package isPalindrome;
 class IsPalindromeSolution {
     public boolean isPalindrome(String s) {
         if(s.equals(" ") || (s.length() == 1)) return true;

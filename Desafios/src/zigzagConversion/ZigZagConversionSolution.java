@@ -1,3 +1,5 @@
+package zigzagConversion;
+
 public class ZigZagConversionSolution
 {
 	public static void main(String[]args)
